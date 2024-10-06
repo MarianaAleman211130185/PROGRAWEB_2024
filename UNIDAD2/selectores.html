@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores</title>
+    <style>
+        body {font-size: 22px;} /*Aquí especificamos el tamaño de la letra*/
+        p {color: purple;} /* El color de la letra que tendran los parrafos*/
+        button, input, textarea, select {font: inherit;} 
+        .gray {color: gray;} /*Un claro ejemplo de selectores de clase, solo cambiara el estilo a los que tengan esta clase*/
+        #second {font-style: italic;}/*Un claro ejemplo de selectores de clases, la cual solo le cambiara el estilo a los que tengan dicho ID*/
+        h1, h2 {color: blue;} /*Aquí se realiza un agrupamiento de selectores, la cual el cambio lo sufrira quienes esten dentro del agrupamiento*/
+        p span
+        .highlight {text-transform: uppercase;background-color: gold;} /*Un ejemplo de como son los selectores compuestos, donde, de igual forma, solo sufriran las reglas predenterminadas, aquellos atributos agregados*/
+        * {font-family: monospace;}/*Aquí seleccionamos y le dams un tipo de letra distinto a la página web con un selector universal */
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Selectors</h1>
+    </header>
+    <main>
+        <article>
+            <h2>Article 1</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam cumque voluptatum tempore officiis
+                deserunt
+                officia, molestias tenetur tempora. Numquam assumenda eligendi ipsam ut quibusdam ex autem placeat
+                deleniti
+                hic optio?</p>
+        </article>
+        <article>
+            <h2>Article 2</h2>
+            <p id="second" class="gray">Iste, possimus, delectus blanditiis, in dolores voluptatem culpa officia quae
+                eius
+                consequatur
+                suscipit optio
+                cum hic. Architecto ipsum rem accusamus! Quaerat repellendus <span class="highlight">nihil</span>
+                ratione tenetur voluptas
+                veritatis,
+                sunt
+                nesciunt rem.</p>
+        </article>
+        <article>
+            <h2>Article 3</h2>
+            <p class="gray">Iste, possimus, delectus blanditiis, in dolores voluptatem culpa officia quae eius
+                consequatur
+                suscipit optio
+                cum hic. Architecto <span class="highlight">ipsum</span> rem accusamus! Quaerat repellendus nihil
+                ratione tenetur voluptas
+                veritatis,
+                sunt
+                nesciunt rem.</p>
+        </article>
+    </main>
+</body>
+</html>
